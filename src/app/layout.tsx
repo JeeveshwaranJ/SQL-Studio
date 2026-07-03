@@ -12,29 +12,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sqlstudio.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sqlstudio.jeeveshwaran.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "SQL Studio — AI-Powered Browser SQLite Workspace",
+    default: "SQL Studio — AI-Powered SQLite IDE & Database Workspace",
     template: "%s | SQL Studio",
   },
   description:
-    "SQL Studio is a premium, offline-first SQLite workspace running entirely in your browser. Write queries with Monaco autocomplete, design schemas visually, seed mock data, and chat with an AI Copilot — no server, no data leaks.",
+    "SQL Studio is a free browser-based SQLite IDE powered by WebAssembly and AI. Write SQL queries, design schemas visually, generate mock data, explore databases, and use an AI SQL Copilot securely in your browser.",
   keywords: [
-    "SQL editor",
-    "SQLite browser",
-    "browser SQL IDE",
-    "WebAssembly SQLite",
-    "AI SQL copilot",
-    "schema designer",
-    "mock data seeder",
-    "offline SQL",
-    "database IDE",
-    "sql.js",
     "SQL Studio",
-    "client-side database",
+    "online SQL editor",
+    "SQLite IDE",
+    "browser database editor",
+    "AI SQL assistant",
+    "AI SQL generator",
+    "database design tool",
+    "SQLite WebAssembly",
+    "SQL playground",
+    "schema designer",
+    "ER diagram tool",
+    "mock database generator",
+    "developer tools"
   ],
   authors: [{ name: "SQL Studio Team", url: SITE_URL }],
   creator: "SQL Studio",
@@ -50,9 +51,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "SQL Studio — AI-Powered Browser SQLite Workspace",
+    title: "SQL Studio — AI-Powered SQLite IDE & Database Workspace",
     description:
-      "A premium offline-first SQL IDE for the browser. Monaco editor, AI Copilot, visual schema designer, mock data seeder — all running locally in WebAssembly.",
+      "SQL Studio is a free browser-based SQLite IDE powered by WebAssembly and AI. Write SQL queries, design schemas visually, generate mock data, explore databases, and use an AI SQL Copilot securely in your browser.",
     siteName: "SQL Studio",
     locale: "en_US",
     images: [
@@ -68,9 +69,9 @@ export const metadata: Metadata = {
   // Twitter / X Cards
   twitter: {
     card: "summary_large_image",
-    title: "SQL Studio — AI-Powered Browser SQLite Workspace",
+    title: "SQL Studio — AI-Powered SQLite IDE & Database Workspace",
     description:
-      "Offline-first SQLite IDE in your browser. Monaco editor, AI Copilot, visual schema designer & mock data seeder.",
+      "SQL Studio is a free browser-based SQLite IDE powered by WebAssembly and AI. Write SQL queries, design schemas visually, generate mock data, explore databases, and use an AI SQL Copilot securely in your browser.",
     images: [`${SITE_URL}/og-image.png`],
     creator: "@sqlstudio",
   },
@@ -130,20 +131,22 @@ const jsonLd = {
   operatingSystem: "Web",
   url: SITE_URL,
   description:
-    "A premium browser-native SQLite IDE with Monaco editor, AI Copilot, visual schema designer, and mock data seeder. Runs entirely client-side in WebAssembly.",
+    "SQL Studio is a free browser-based SQLite IDE powered by WebAssembly and AI. Write SQL queries, design schemas visually, generate mock data, explore databases, and use an AI SQL Copilot securely in your browser.",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
   },
   featureList: [
-    "SQLite WebAssembly execution",
-    "Monaco autocomplete editor",
+    "Browser SQLite execution",
     "AI SQL Copilot",
-    "Visual ER schema designer",
-    "Mock data seeder",
-    "Schema diff & migrations",
-    "100% offline, no data sent to servers",
+    "Monaco SQL Editor",
+    "Visual Schema Designer",
+    "ER Diagram Builder",
+    "Mock Data Generator",
+    "Database Explorer",
+    "Schema Diff Tool",
+    "Offline Database Workspace"
   ],
   screenshot: `${SITE_URL}/og-image.png`,
   softwareVersion: "1.0.0",

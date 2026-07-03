@@ -183,15 +183,15 @@ export default function MarketingLandingPage() {
           {/* Headline */}
           <div className="text-center max-w-4xl space-y-6 mt-6">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl text-neutral-100 leading-[1.08] font-sans">
-              The Intelligent SQL Workspace
+              Free Online SQL Editor &
               <span className="block mt-3 bg-gradient-to-r from-violet-400 via-indigo-300 to-sky-400 bg-clip-text text-transparent">
-                Co-Engineered for Humans.
+                AI SQL Workspace.
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed font-normal">
-              A premium, offline-first client executing SQLite in WebAssembly. Visually construct relationship diagrams, generate schemas via AI pipelines, and seed mock values instantly.
+            <p className="text-base sm:text-lg text-neutral-400 max-w-3xl mx-auto leading-relaxed font-normal">
+              A premium, offline-first browser SQLite IDE and visual SQLite schema designer. Construct relationship diagrams, run queries with Monaco autocomplete, generate schemas via our AI database assistant, and seed mock values instantly.
             </p>
 
             {/* CTAs */}

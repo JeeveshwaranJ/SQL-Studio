@@ -4,4 +4,4 @@ Allow: /
 # Block API routes from crawling
 Disallow: /api/
 
-Sitemap: https://sqlstudio.app/sitemap.xml
+Sitemap: https://sqlstudio.jeeveshwaran.com/sitemap.xml
