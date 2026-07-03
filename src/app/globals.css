@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
+/* VS Code Dark (Default Theme) */
 :root {
+  --background: #1e1e1e;
+  --foreground: #d4d4d4;
+  --card: #252526;
+  --card-foreground: #d4d4d4;
+  --border: #3c3c3c;
+  --primary: #007acc;
+  --primary-foreground: #ffffff;
+  --muted: #2d2d2d;
+  --muted-foreground: #858585;
+  --accent: #37373d;
+  --accent-foreground: #ffffff;
+}
+
+/* GitHub Light Theme */
+.theme-github-light {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #24292f;
+  --card: #f6f8fa;
+  --card-foreground: #24292f;
+  --border: #d0d7de;
+  --primary: #0969da;
+  --primary-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #57606a;
+  --accent: #eaeef2;
+  --accent-foreground: #24292f;
+}
+
+/* Dracula Theme */
+.theme-dracula {
+  --background: #282a36;
+  --foreground: #f8f8f2;
+  --card: #21222c;
+  --card-foreground: #f8f8f2;
+  --border: #44475a;
+  --primary: #bd93f9;
+  --primary-foreground: #282a36;
+  --muted: #343746;
+  --muted-foreground: #6272a4;
+  --accent: #44475a;
+  --accent-foreground: #ff79c6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-body {
+/* Custom Scrollbar Styles for premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Resizable panels handle default state */
+.resize-handle {
+  position: relative;
+  background-color: var(--border);
+  transition: background-color 0.2s ease;
+}
+
+.resize-handle:hover,
+.resize-handle[data-panel-group-direction="vertical"]:hover {
+  background-color: var(--primary);
 }

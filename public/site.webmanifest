@@ -1,0 +1,19 @@
+{
+  "name": "SQL Studio",
+  "short_name": "SQL Studio",
+  "description": "AI-powered offline-first SQLite workspace in your browser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#7c3aed",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "developer tools", "utilities"]
+}
