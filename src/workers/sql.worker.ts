@@ -9,13 +9,13 @@ let db: any = null;
 async function initEngine() {
   if (SQL) return;
   
-  importScripts("https://unpkg.com/sql.js@1.14.1/dist/sql-wasm.js");
+  importScripts(self.location.origin + "/sql-wasm.js");
   
   // @ts-ignore
   SQL = await initSqlJs({
     locateFile: (file: string) => {
       const target = file === "sql-wasm-browser.wasm" ? "sql-wasm.wasm" : file;
-      return `https://unpkg.com/sql.js@1.14.1/dist/${target}`;
+      return `${self.location.origin}/${target}`;
     },
   });
 }

@@ -55,17 +55,18 @@ const nextConfig: NextConfig = {
       // NOTE: 'unsafe-eval' is required for sql.js (WASM JIT) and Monaco editor.
       // 'unsafe-inline' is required for inline styles used by Monaco.
       // blob: is needed for sql.js worker loading.
+      // https://cdn.jsdelivr.net is required for Monaco Editor script/style/worker loading.
       {
         key: "Content-Security-Policy",
         value: [
           `default-src 'self'`,
-          `script-src 'self' 'unsafe-eval' 'unsafe-inline' blob:`,
-          `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
+          `script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://cdn.jsdelivr.net`,
+          `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net`,
           `font-src 'self' https://fonts.gstatic.com`,
           `img-src 'self' data: blob:`,
           `media-src 'none'`,
-          `connect-src 'self' https://*.huggingface.co https://huggingface.co https://api.groq.com blob:`,
-          `worker-src 'self' blob:`,
+          `connect-src 'self' https://*.huggingface.co https://huggingface.co https://api.groq.com https://cdn.jsdelivr.net blob:`,
+          `worker-src 'self' blob: https://cdn.jsdelivr.net`,
           `child-src blob:`,
           `frame-src 'none'`,
           `object-src 'none'`,

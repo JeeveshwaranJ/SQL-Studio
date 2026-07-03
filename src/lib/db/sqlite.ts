@@ -10,7 +10,7 @@ export async function getSqlJsEngine() {
     SQLInstance = await initSqlJs({
       locateFile: (file) => {
         const target = file === "sql-wasm-browser.wasm" ? "sql-wasm.wasm" : file;
-        return `https://unpkg.com/sql.js@1.14.1/dist/${target}`;
+        return `/${target}`;
       },
     });
   }
