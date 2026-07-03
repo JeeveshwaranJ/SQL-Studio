@@ -19,7 +19,7 @@
 ---
 
 <!-- Hero Screenshot -->
-<img src="https://placehold.co/1200x630/09090b/7c3aed?text=SQL+Studio+%E2%80%94+AI+SQLite+Workspace&font=montserrat" alt="SQL Studio workspace screenshot" width="100%" style="border-radius: 12px; border: 1px solid #27272a;" />
+<img src="https://github.com/JeeveshwaranJ/SQL-Studio/blob/b67142390f6b10e75c293c5c49d6d51b5a3eb7e3/screenshots/landing%20page.png" />
 
 </div>
 
@@ -44,21 +44,21 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://placehold.co/560x340/09090b/8b5cf6?text=Query+Editor&font=montserrat" alt="Query Editor" width="100%" /><br />
+      <img src="https://github.com/JeeveshwaranJ/SQL-Studio/blob/b67142390f6b10e75c293c5c49d6d51b5a3eb7e3/screenshots/query%20editor.png" alt="Query Editor" width="100%" /><br />
       <sub><b>Monaco SQL Editor</b></sub>
     </td>
     <td align="center">
-      <img src="https://placehold.co/560x340/09090b/6366f1?text=ER+Schema+Designer&font=montserrat" alt="Schema Designer" width="100%" /><br />
+      <img src="https://github.com/JeeveshwaranJ/SQL-Studio/blob/b67142390f6b10e75c293c5c49d6d51b5a3eb7e3/screenshots/schema%20designer.png" alt="Schema Designer" width="100%" /><br />
       <sub><b>Visual ER Graph Designer</b></sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://placehold.co/560x340/09090b/0ea5e9?text=Data+Explorer&font=montserrat" alt="Data Explorer" width="100%" /><br />
+      <img src="https://github.com/JeeveshwaranJ/SQL-Studio/blob/b67142390f6b10e75c293c5c49d6d51b5a3eb7e3/screenshots/Data%20explorer.png" alt="Data Explorer" width="100%" /><br />
       <sub><b>Spreadsheet Data Explorer</b></sub>
     </td>
     <td align="center">
-      <img src="https://placehold.co/560x340/09090b/10b981?text=AI+Copilot+Chat&font=montserrat" alt="AI Copilot" width="100%" /><br />
+      <img src="https://github.com/JeeveshwaranJ/SQL-Studio/blob/b67142390f6b10e75c293c5c49d6d51b5a3eb7e3/screenshots/ai.png" alt="AI Copilot" width="100%" /><br />
       <sub><b>AI Copilot Assistant</b></sub>
     </td>
   </tr>
