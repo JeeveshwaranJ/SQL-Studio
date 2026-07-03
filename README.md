@@ -7,7 +7,7 @@
 <p><strong>AI-powered, offline-first SQLite workspace that runs entirely in your browser.</strong></p>
 
 <p>
-  <a href="https://sqlstudio.app"><img src="https://img.shields.io/badge/Live%20Demo-sqlstudio.app-7c3aed?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
+  <a href="https://sqlstudio.jeeveshwaran.com/"><img src="https://img.shields.io/badge/Live%20Demo-sqlstudio.app-7c3aed?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
   &nbsp;
   <a href="#-quick-start"><img src="https://img.shields.io/badge/Quick%20Start-Get%20Running-10b981?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Quick Start" /></a>
   &nbsp;
